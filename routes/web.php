@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\PhoneController::class, 'index']);
+Route::get('/comment', [\App\Http\Controllers\PostController::class, 'index']);

@@ -46,6 +46,12 @@ class PhoneController extends Controller
         //        foreach ($numbers as $number){
         //            dump($number->number);
         //        }
+        //                  ==create==
+        //        $phone = Phone::findOrFail(1);
+        //        $new_number = $phone->numbers()->create([
+        //            'number' => 214212342331
+        //        ]);
+        //        dump($new_number);
 
         // ==================================
         // ОДИН КО МНОГИМ ОБРАТНОЕ ОТНОШЕНИЕ|
@@ -60,10 +66,14 @@ class PhoneController extends Controller
         //          МНОГИЕ КО МНОГИМ        |
         // ==================================
 
-        //    $users = User::find(6);
-        //    foreach ($users->role as $user){
-        //        dump($user->role_name);
-        //    }
+        //            $users = User::find(5);
+        //            foreach ($users->role as $user){
+        //                dump($user->role_name);
+        //                dump($user->id);
+        //            }
+        // ========== detach ================
+        // $users->role()->detach(id_role);
+
 
         // ==================================
         //   ОДИН ЧЕРЕЗ ОТНОШЕНИЯ           |
